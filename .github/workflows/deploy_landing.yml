@@ -17,47 +17,50 @@ concurrency:
 
 jobs:
   build:
+    name: Build Landing
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
-          cache-dependency-path: landing/package-lock.json
 
       - name: Install dependencies
         working-directory: landing
-        run: npm ci
+        run: npm install
 
-      - name: Build landing
+      - name: Build application
         working-directory: landing
         run: npm run build
 
-      - name: Verify build output
-        run: ls -la landing/dist
+      - name: Check build output
+        run: |
+          echo "Build generated:"
+          ls -la landing/dist
 
-      - name: Setup GitHub Pages
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: landing/dist
 
+
   deploy:
-    needs: build
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
+    needs: build
 
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
