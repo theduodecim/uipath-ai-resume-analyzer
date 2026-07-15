@@ -20,15 +20,15 @@ export default function Footer() {
       <div className="flex flex-col justify-between gap-6 border-t border-slate-800 pt-8 md:flex-row md:items-center">
         <p className="text-slate-500">AI PDF Summarizer — UiPath + LLM Automation Portfolio</p>
         <div className="flex gap-4 text-slate-400">
-          <a className="inline-flex items-center gap-1.5 transition hover:text-cyan-300" href="https://github.com/">
+          <a className="inline-flex items-center gap-1.5 transition hover:text-cyan-300" href="https://github.com/theduodecim">
             <GitHubIcon className="h-4 w-4" />
             GitHub
           </a>
-          <a className="inline-flex items-center gap-1.5 transition hover:text-cyan-300" href="https://linkedin.com/">
+          <a className="inline-flex items-center gap-1.5 transition hover:text-cyan-300" href="https://www.linkedin.com/in/juan-sebastian-cabrera-42ab7aa5">
             <LinkedInIcon className="h-4 w-4" />
             LinkedIn
           </a>
-          <a className="transition hover:text-cyan-300" href="https://example.com/">Portfolio</a>
+          <a className="transition hover:text-cyan-300" href="https://theduodecim.github.io/portafolio-juanSebastian/">Portfolio</a>
         </div>
       </div>
     </footer>
