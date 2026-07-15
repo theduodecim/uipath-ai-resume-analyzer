@@ -10,7 +10,7 @@ export default function Hero() {
         <h1 className="text-5xl font-extrabold tracking-tight text-white md:text-7xl">AI PDF Summarizer</h1>
         <p className="mt-6 max-w-2xl text-xl leading-8 text-slate-300">UiPath RPA workflow powered by LLM integration</p>
         <p className="mt-5 max-w-2xl text-slate-400">A professional automation portfolio project documenting PDF intake, text extraction, OpenRouter API integration, and structured AI analysis.</p>
-        <a href="https://github.com/" className="mt-8 inline-flex items-center gap-2 rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300">
+        <a href="https://github.com/theduodecim/uipath-ai-resume-analyzer" className="mt-8 inline-flex items-center gap-2 rounded-full bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-cyan-300">
           View Repository <ArrowRight className="h-4 w-4" />
         </a>
       </div>
