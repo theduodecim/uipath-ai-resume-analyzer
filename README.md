@@ -114,9 +114,13 @@ See the detailed roadmap in [roadmap.md](roadmap.md).
 ## Author
 
 [Name]
+Juan Sebastian Cabrera
 
 [GitHub]
+https://github.com/theduodecim
 
 [LinkedIn]
+https://www.linkedin.com/in/juan-sebastian-cabrera-42ab7aa5/
 
 [Portfolio]
+https://theduodecim.github.io/portafolio-juanSebastian/
