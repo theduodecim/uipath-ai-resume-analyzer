@@ -1,4 +1,6 @@
 import { Brain, FileInput, FileText, Settings2, Sparkles } from 'lucide-react';
+import workflowScreenshot from '../assets/screenshots/workflow.png';
+import executionScreenshot from '../assets/screenshots/execution.png';
 
 const steps = [
   { title: 'PDF Input', icon: FileInput, text: 'PDF document retrieved from Google Drive.' },
@@ -25,8 +27,12 @@ export default function Workflow() {
           ))}
         </div>
         <div className="mt-6 grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-dashed border-slate-600 p-8 text-center text-slate-500">Screenshot placeholder: workflow.png</div>
-          <div className="rounded-2xl border border-dashed border-slate-600 p-8 text-center text-slate-500">Screenshot placeholder: execution.png</div>
+          <div className="overflow-hidden rounded-2xl border border-slate-700">
+            <img src={workflowScreenshot} alt="UiPath Studio Web workflow: Manual Trigger, Download File, Read PDF Text, Message Box, HTTP Request" className="w-full" />
+          </div>
+          <div className="overflow-hidden rounded-2xl border border-slate-700">
+            <img src={executionScreenshot} alt="UiPath Studio Web execution result" className="w-full" />
+          </div>
         </div>
       </div>
       <div className="mt-8 grid gap-4 md:grid-cols-5">
