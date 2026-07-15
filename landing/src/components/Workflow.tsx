@@ -1,6 +1,6 @@
 import { Brain, FileInput, FileText, Settings2, Sparkles } from 'lucide-react';
-import workflowScreenshot from '../assets/screenshots/workflow.png';
-import executionScreenshot from '../assets/screenshots/execution.png';
+import workflowScreenshot from '../assets/workflow.png';
+import executionScreenshot from '../assets/execution.png';
 
 const steps = [
   { title: 'PDF Input', icon: FileInput, text: 'PDF document retrieved from Google Drive.' },
